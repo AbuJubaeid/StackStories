@@ -1,0 +1,15 @@
+.section-title {
+  @apply text-4xl font-bold text-center;
+}
+
+.section-subtitle {
+  @apply text-center text-gray-500 mt-3;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-2xl;
+}
