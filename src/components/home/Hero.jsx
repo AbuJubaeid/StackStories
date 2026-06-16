@@ -42,7 +42,7 @@ const Hero = () => {
 
           <div>
             <img
-              src="/hero-image.jpg"
+              src="https://i.ibb.co.com/bMFt9pYT/pexels-karola-g2-6440.jpg"
               alt="Hero"
               className="rounded-3xl shadow-xl w-full"
             />

@@ -21,7 +21,7 @@ const AboutPage = () => {
 
       <div className="grid md:grid-cols-2 gap-12 mt-20 items-center">
         <img
-          src="/hero-image.jpg"
+          src="https://i.ibb.co.com/MDb1VMgh/pexels-brettjordan-5714178.jpg"
           alt="About StackStories"
           className="rounded-2xl shadow-lg"
         />

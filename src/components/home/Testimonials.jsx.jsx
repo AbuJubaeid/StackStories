@@ -2,18 +2,21 @@ const testimonials = [
   {
     id: 1,
     name: "Sarah Johnson",
+    image: "https://i.ibb.co.com/Xrch4mCD/pexels-olly-3808125.jpg",
     review:
       "StackStories helped me stay updated with the latest web technologies.",
   },
   {
     id: 2,
     name: "Michael Lee",
+    image: "https://i.ibb.co.com/84K0YqQL/pexels-gpop-nl-451536741-29440898.jpg",
     review:
       "One of the best platforms for learning development concepts.",
   },
   {
     id: 3,
     name: "Emily Davis",
+    image: "https://i.ibb.co.com/Z664J8zn/pexels-cottonbro-4855318.jpg",
     review:
       "The articles are practical, detailed and easy to understand.",
   },
@@ -37,15 +40,15 @@ const Testimonials = () => {
                 <div className="avatar">
                   <div className="w-14 rounded-full">
                     <img
-                      src="/default-avatar.png"
+                      src={testimonial.image}
                       alt={testimonial.name}
                     />
                   </div>
                 </div>
 
-                {/* <p className="italic">
-                  "{testimonial.review}"
-                </p> */}
+                  <p className="italic">
+                  {testimonial.review}
+                </p>
 
                 <h4 className="font-semibold">
                   {testimonial.name}
