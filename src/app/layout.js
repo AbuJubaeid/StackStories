@@ -1,39 +1,26 @@
-import "./globals.css";
-
-// import AuthProvider from "@/context/AuthContext";
-import AuthProvider from "@/providers/AuthProvider";
-
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
+import AuthProvider from "@/providers/AuthProvider";
+import { Geist } from "next/font/google";
+import { Toaster } from "react-hot-toast";
+import "./globals.css";
 
-import {
-  Toaster,
-} from "react-hot-toast";
+const geist = Geist({ subsets: ["latin"] });
 
 export const metadata = {
   title: "StackStories",
-  description:
-    "Discover stories that matter",
+  description: "A community for stories",
 };
 
-export default function RootLayout({
-  children,
-}) {
+export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" data-theme="light">
+      <body className={geist.className}>
         <AuthProvider>
           <Navbar />
-
-          <main className="min-h-screen">
-            {children}
-          </main>
-
+          {children}
           <Footer />
-
-          <Toaster
-            position="top-right"
-          />
+          <Toaster position="top-right" />
         </AuthProvider>
       </body>
     </html>

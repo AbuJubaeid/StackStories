@@ -1,3 +1,4 @@
+
 "use client";
 
 import useAuth from "@/hooks/useAuth";
@@ -17,7 +18,7 @@ const ProtectedRoute = ({ children }) => {
   if (loading) {
     return (
       <div className="min-h-screen flex justify-center items-center">
-        <span className="loading loading-spinner loading-lg"></span>
+        <span className="loading loading-spinner loading-lg text-primary"></span>
       </div>
     );
   }
