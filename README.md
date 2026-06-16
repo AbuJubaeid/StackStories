@@ -1,36 +1,193 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# StackStories
 
-## Getting Started
+A modern blogging platform built with Next.js, Firebase Authentication, and Tailwind CSS, where users can discover, read, and share stories from the developer community.
 
-First, run the development server:
+## 🌐 Live Website
+
+**Live Site:**
+
+## 📂 Repository
+
+**GitHub Repository:** https://github.com/AbuJubaeid/StackStories
+
+---
+
+## 🚀 Features
+
+### Public Features
+
+- Responsive landing page
+- Modern and clean UI design
+- Browse all blog posts
+- View detailed blog content
+- Search and discover stories
+- Mobile-friendly layout
+
+### Authentication Features
+
+- Firebase Authentication
+- User Registration
+- User Login
+- Google Sign-In
+- Protected Routes
+- Persistent Authentication State
+- Logout Functionality
+
+### User Features
+
+- View profile information
+- Access protected pages
+- Personalized user experience
+
+### UI & UX Features
+
+- Light/Dark Mode Support
+- Responsive Navbar
+- Loading States
+- Error Handling
+- Modern Card Layouts
+- Toast Notifications
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- DaisyUI
+
+### Authentication
+
+- Firebase Authentication
+
+### State Management
+
+- React Context API
+
+### Styling
+
+- Tailwind CSS
+- DaisyUI Components
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+│
+├── app/
+│   ├── login/
+│   ├── register/
+│   ├── blogs/
+│   ├── profile/
+│   └── dashboard/
+│
+├── components/
+│   ├── Navbar/
+│   ├── Footer/
+│   ├── Banner/
+│   └── Shared/
+│
+├── providers/
+│   └── AuthProvider/
+│
+├── hooks/
+│
+├── firebase/
+│   └── firebase.config.ts
+│
+├── routes/
+│   └── PrivateRoute.tsx
+│
+└── utils/
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/AbuJubaeid/StackStories.git
+```
+
+### 2. Navigate to Project Directory
+
+```bash
+cd StackStories
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Create Environment Variables
+
+Create a `.env.local` file in the root directory and add:
+
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+```
+
+### 5. Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🔥 Firebase Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Create a Firebase Project.
+2. Enable Authentication.
+3. Enable:
+   - Email/Password Authentication
+   - Google Authentication
 
-## Learn More
+4. Copy Firebase Configuration.
+5. Add credentials to `.env.local`.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Responsive Design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The application is optimized for:
 
-## Deploy on Vercel
+- Mobile Devices
+- Tablets
+- Laptops
+- Desktop Screens
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔒 Protected Routes
+
+Authenticated users can access:
+
+- Dashboard
+- Profile
+- User-Specific Features
+
+Unauthenticated users are redirected to the Login page.
+
+---
+
+## 👨‍💻 Developer
+
+**MD. Abu Jubaeid Pranto**
+
+- LinkedIn: https://www.linkedin.com/in/abujubaeidpranto/
